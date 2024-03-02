@@ -1,19 +1,19 @@
-"use client"
+'use client';
 
-import { FC, ReactNode } from "react";
-import ScrollToTop from "react-scroll-to-top";
+import { FC, ReactNode } from 'react';
+import ScrollToTop from 'react-scroll-to-top';
 
 interface IScrollToTopWrapperProps {
-    children?: ReactNode
+    children?: ReactNode;
 }
 
-const ScrollToTopWrapper: FC = ({children}: IScrollToTopWrapperProps) => {
+const ScrollToTopWrapper: FC = ({ children }: IScrollToTopWrapperProps) => {
     return (
         <>
             <ScrollToTop smooth={true} />
             {children}
         </>
-    )
-} 
+    );
+};
 
-export default ScrollToTopWrapper
+export default ScrollToTopWrapper;
