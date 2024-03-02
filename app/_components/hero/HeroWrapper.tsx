@@ -1,46 +1,47 @@
 import { FC } from 'react';
-import HeroServices from './HeroServices';
 
 const HeroWrapper: FC = () => {
     return (
         <>
-            <div className='bg-white relative pt-10 pb-20 lg:pt-44 dark:bg-gray-900'>
-                <div className='relative xl:container m-auto px-6 md:px-12 lg:px-6'>
-                    <h1 className='sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white'>
-                        Sending emails{' '}
-                        <br className='lg:block hidden' />{' '}
-                        <span className='relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300'>
-                            right and simple way
+            <main className='mx-auto mt-10 flex justify-center px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28'>
+                <div className='text-center '>
+                    <h1 className='text-4xl font-extrabold tracking-tight text-gray-900 dark:text-slate-200 sm:text-5xl md:text-6xl'>
+                        <span className='block xl:inline'>
+                            <span className='mb-1 block'>Sending Emails</span>
+                            <span className='bg-gradient-to-r from-indigo-400 to-pink-600 bg-clip-text text-transparent'>
+                                right and 
+                            </span>
                         </span>
-                        .
-                    </h1>
-                    <div className='lg:flex'>
-                        <div className='relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12'>
-                            <p className='sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempora eveniet minus ducimus corrupti voluptatibus ratione obcaecati a perferendis. Magni eius repellat architecto facilis, voluptatibus ex facere quam alias libero maiores ab consectetur corrupti incidunt, amet dolorem modi voluptate tenetur?
-                            </p>
-                        </div>
-                        <div className='mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12'>
-                            <div className='relative w-full'>
-                                <div
+                        <div className='mt-2'>
+                            simple 
+                            <span className='relative mt-3 whitespace-nowrap text-blue-600'>
+                                <svg
                                     aria-hidden='true'
-                                    className='absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r from-sky-500 to-cyan-300 blur-3xl'
-                                ></div>
-                                <img
-                                    src='https://tailus.io/sources/blocks/tech-startup/preview/images/globalization-cuate.svg'
-                                    className='relative w-full'
-                                    alt='wath illustration'
-                                    loading='lazy'
-                                    width='320'
-                                    height='280'
-                                />
-                            </div>
+                                    viewBox='0 0 418 42'
+                                    className='absolute top-3/4 left-0 right-0 m-auto h-[0.58em] w-fit fill-pink-400/50'
+                                    preserveAspectRatio='none'
+                                >
+                                    <path d='M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z'></path>
+                                </svg>
+                                <span className='relative'>way</span>
+                            </span>
+                        </div>
+                    </h1>
+                    <p className='mx-auto mt-3 max-w-xl text-lg text-gray-500 sm:mt-5 md:mt-5'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia iusto ducimus hic fugit voluptas provident enim ullam veniam. Perferendis cumque officiis voluptates? Optio aliquid provident quo ratione sed ducimus esse incidunt quos odit ad dolore accusamus nisi molestiae, minus facilis quis officiis iste beatae exercitationem facere laboriosam asperiores? Perspiciatis, aspernatur.
+                    </p>
+                    <div className='mt-5 sm:mt-8 sm:flex sm:justify-center'>
+                        <div className='rounded-md shadow'>
+                            <a
+                                className='flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-blue-700 md:py-4 md:px-10 md:text-lg'
+                                href='/sign-in'
+                            >
+                                Get started for free 🚀
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <HeroServices />
+            </main>
         </>
     );
 };
