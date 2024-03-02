@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import NextUIWrapper from './_components/shared/NextUIWrapper';
+import NextUIWrapper from './_components/shared/providers/NextUIWrapper';
 import Navigation from './_components/shared/Navigation';
+import ScrollToTopWrapper from './_components/shared/providers/ScrollToTopWrapper';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
                 <NextUIWrapper>
                     <Navigation />
                     {children}
+                    <ScrollToTopWrapper />
                 </NextUIWrapper>
             </body>
         </html>
