@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import React, { FC, useState } from 'react';
 import {
@@ -16,18 +16,7 @@ import {
 const Navigation: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const menuItems = [
-        'Profile',
-        'Dashboard',
-        'Activity',
-        'Analytics',
-        'System',
-        'Deployments',
-        'My Settings',
-        'Team Settings',
-        'Help & Feedback',
-        'Log Out',
-    ];
+    const menuItems = ['Profile'];
 
     return (
         <Navbar
@@ -42,30 +31,21 @@ const Navigation: FC = () => {
             </NavbarContent>
 
             <NavbarContent className='sm:hidden pr-3' justify='center'>
-                <NavbarBrand>
-                    rrrr
-                    <p className='font-bold text-inherit'>ACME</p>
-                </NavbarBrand>
+                <NavbarBrand>Emails-Newletter</NavbarBrand>
             </NavbarContent>
 
             <NavbarContent className='hidden sm:flex gap-4' justify='center'>
-                <NavbarBrand>
-                    rrr
-                    <p className='font-bold text-inherit'>ACME</p>
+                <NavbarBrand className='font-bold'>
+                    Emails-Newletter
                 </NavbarBrand>
                 <NavbarItem>
                     <Link color='foreground' href='#'>
-                        Features
+                        Services
                     </Link>
                 </NavbarItem>
                 <NavbarItem isActive>
                     <Link href='#' aria-current='page'>
-                        Customers
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link color='foreground' href='#'>
-                        Integrations
+                        Pricing
                     </Link>
                 </NavbarItem>
             </NavbarContent>

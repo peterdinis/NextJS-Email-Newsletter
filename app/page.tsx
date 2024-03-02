@@ -4,7 +4,7 @@ import HeroWrapper from './_components/hero/HeroWrapper';
 const Homepage: NextPage = () => {
     return (
         <>
-          <HeroWrapper />
+            <HeroWrapper />
         </>
     );
 };
