@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import HeroServices from './HeroServices';
 
 const HeroWrapper: FC = () => {
     return (
@@ -38,6 +39,8 @@ const HeroWrapper: FC = () => {
                     </div>
                 </div>
             </div>
+
+            <HeroServices />
         </>
     );
 };
