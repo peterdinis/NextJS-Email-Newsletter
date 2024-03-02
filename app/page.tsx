@@ -1,10 +1,10 @@
 import { NextPage } from 'next';
-import { Button } from '@nextui-org/react';
+import HeroWrapper from './_components/hero/HeroWrapper';
 
 const Homepage: NextPage = () => {
     return (
         <>
-            <Button>PING</Button>
+          <HeroWrapper />
         </>
     );
 };

@@ -20,7 +20,7 @@ export default function RootLayout({
         <html lang='en'>
             <body className={inter.className}>
                 <NextUIWrapper>
-                    <Navigation />
+                   <Navigation />
                     {children}
                 </NextUIWrapper>
             </body>
