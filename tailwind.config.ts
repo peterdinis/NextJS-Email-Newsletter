@@ -35,6 +35,6 @@ const config: Config = {
         },
     },
     darkMode: 'class',
-    plugins: [nextui()],
+    plugins: [nextui(), require("tailwindcss-animate"), require('@tailwindcss/typography')],
 };
 export default config;
