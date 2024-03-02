@@ -1,72 +1,41 @@
 import { FC } from 'react';
+
 const HeroWrapper: FC = () => {
     return (
         <>
-            <div className='relative isolate lg:px-8'>
-                <div
-                    className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'
-                    aria-hidden='true'
-                >
-                    <div
-                        className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]'
-                        style={{
-                            clipPath:
-                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                        }}
-                    />
-                </div>
-                <div className='mx-auto max-w-2xl sm:py-48 lg:py-56'>
-                    <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
-                        <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
-                            Announcing our next round of funding.{' '}
-                            <a
-                                href='#'
-                                className='font-semibold text-indigo-600'
-                            >
-                                <span
-                                    className='absolute inset-0'
+            <div className='bg-white relative pt-10 pb-20 lg:pt-44 dark:bg-gray-900'>
+                <div className='relative xl:container m-auto px-6 md:px-12 lg:px-6'>
+                    <h1 className='sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white'>
+                        Sending emails{' '}
+                        <br className='lg:block hidden' />{' '}
+                        <span className='relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300'>
+                            right and simple way
+                        </span>
+                        .
+                    </h1>
+                    <div className='lg:flex'>
+                        <div className='relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12'>
+                            <p className='sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempora eveniet minus ducimus corrupti voluptatibus ratione obcaecati a perferendis. Magni eius repellat architecto facilis, voluptatibus ex facere quam alias libero maiores ab consectetur corrupti incidunt, amet dolorem modi voluptate tenetur?
+                            </p>
+                        </div>
+                        <div className='mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12'>
+                            <div className='relative w-full'>
+                                <div
                                     aria-hidden='true'
+                                    className='absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r from-sky-500 to-cyan-300 blur-3xl'
+                                ></div>
+                                <img
+                                    src='https://tailus.io/sources/blocks/tech-startup/preview/images/globalization-cuate.svg'
+                                    className='relative w-full'
+                                    alt='wath illustration'
+                                    loading='lazy'
+                                    width='320'
+                                    height='280'
                                 />
-                                Read more <span aria-hidden='true'>&rarr;</span>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div className='text-center'>
-                        <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                            Data to enrich your online business
-                        </h1>
-                        <p className='mt-6 text-lg leading-8 text-gray-600'>
-                            Anim aute id magna aliqua ad ad non deserunt sunt.
-                            Qui irure qui lorem cupidatat commodo. Elit sunt
-                            amet fugiat veniam occaecat fugiat aliqua.
-                        </p>
-                        <div className='mt-10 flex items-center justify-center gap-x-6'>
-                            <a
-                                href='#'
-                                className='rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                            >
-                                Get started
-                            </a>
-                            <a
-                                href='#'
-                                className='text-sm font-semibold leading-6 text-gray-900'
-                            >
-                                Learn more <span aria-hidden='true'>→</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'
-                    aria-hidden='true'
-                >
-                    <div
-                        className='relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]'
-                        style={{
-                            clipPath:
-                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                        }}
-                    />
                 </div>
             </div>
         </>
