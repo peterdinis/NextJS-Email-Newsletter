@@ -4,6 +4,7 @@ import './globals.css';
 import NextUIWrapper from './_components/shared/providers/NextUIWrapper';
 import Navigation from './_components/shared/Navigation';
 import ScrollToTopWrapper from './_components/shared/providers/ScrollToTopWrapper';
+import { ClerkProvider } from '@clerk/nextjs';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,7 +23,9 @@ export default function RootLayout({
             <body className={inter.className}>
                 <NextUIWrapper>
                     <Navigation />
+                    <ClerkProvider>
                     {children}
+                    </ClerkProvider>
                     <ScrollToTopWrapper />
                 </NextUIWrapper>
             </body>
