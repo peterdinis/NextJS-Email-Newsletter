@@ -23,9 +23,7 @@ export default function RootLayout({
             <body className={inter.className}>
                 <NextUIWrapper>
                     <Navigation />
-                    <ClerkProvider>
-                    {children}
-                    </ClerkProvider>
+                    <ClerkProvider>{children}</ClerkProvider>
                     <ScrollToTopWrapper />
                 </NextUIWrapper>
             </body>

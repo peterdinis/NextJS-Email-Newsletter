@@ -20,6 +20,11 @@ const config: Config = {
                 spotlight: 'spotlight 2s ease .75s 1 forwards',
             },
 
+            gridTemplateColumns: {
+                sidebar: '300px auto', //for sidebar layout
+                'sidebar-collapsed': '64px auto', //for collapsed sidebar layout
+            },
+
             keyframes: {
                 spotlight: {
                     '0%': {
@@ -35,6 +40,10 @@ const config: Config = {
         },
     },
     darkMode: 'class',
-    plugins: [nextui(), require("tailwindcss-animate"), require('@tailwindcss/typography')],
+    plugins: [
+        nextui(),
+        require('tailwindcss-animate'),
+        require('@tailwindcss/typography'),
+    ],
 };
 export default config;

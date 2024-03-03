@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+import Sidebar from './sidebar/Sidebar';
 
 interface IAppLayoutProps {
     children?: ReactNode;
@@ -7,7 +8,7 @@ interface IAppLayoutProps {
 const AppLayout: FC<IAppLayoutProps> = ({ children }: IAppLayoutProps) => {
     return (
         <div className='w-full flex'>
-            <div className='w-[290px] h-screen overflow-y-scroll'></div>
+            <Sidebar />
             {children}
         </div>
     );
