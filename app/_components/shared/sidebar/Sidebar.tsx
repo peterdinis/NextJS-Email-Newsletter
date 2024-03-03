@@ -5,6 +5,8 @@ import classNames from 'classnames';
 import { IoIosClose } from 'react-icons/io';
 import SidebarItems from './SidebarItems';
 import { useSidebarStore } from '@/app/_store/sidebarStore';
+import { Divider } from '@nextui-org/react';
+import MyPlan from '../plans/MyPlan';
 
 const Sidebar: FC = () => {
     const { isOpen, toggleSidebar } = useSidebarStore();
@@ -25,6 +27,14 @@ const Sidebar: FC = () => {
                     </button>
                     <div className='mt-6'>
                         <SidebarItems />
+                    </div>
+
+                    <div className="mt-6">
+                        <Divider />
+
+                        <div className='mt-5'>
+                            <MyPlan />
+                        </div>
                     </div>
                 </div>
             </div>
