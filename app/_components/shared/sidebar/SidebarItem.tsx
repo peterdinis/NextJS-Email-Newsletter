@@ -1,9 +1,9 @@
-"use client"
+'use client';
 
 import Link from 'next/link';
 import { FC, Fragment, ReactNode } from 'react';
 import { useSidebarStore } from '@/app/_store/sidebarStore';
-import { Button } from '@nextui-org/react';
+import { Button, Tooltip } from '@nextui-org/react';
 
 interface ISidebarItemProps {
     text: string;
@@ -18,22 +18,22 @@ const SidebarItem: FC<ISidebarItemProps> = ({
     linkHref,
     icon,
 }: ISidebarItemProps) => {
-    const {isOpen} = useSidebarStore();
+    const { isOpen } = useSidebarStore();
 
     return (
         <Fragment>
             {isOpen ? (
-                <div>
+                <Tooltip content={text}>
                     <Link className={className} href={linkHref}>
                         {icon}
                     </Link>
-                </div>
-            ): (
+                </Tooltip>
+            ) : (
                 <div>
                     <Link className={className} href={linkHref}>
-                       <Button variant='ghost' size="md" startContent={icon}>
-                         {text}
-                       </Button>
+                        <Button variant='ghost' size='md' startContent={icon}>
+                            {text}
+                        </Button>
                     </Link>
                 </div>
             )}

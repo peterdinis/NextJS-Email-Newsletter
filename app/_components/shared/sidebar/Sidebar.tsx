@@ -29,7 +29,7 @@ const Sidebar: FC = () => {
                         <SidebarItems />
                     </div>
 
-                    <div className="mt-6">
+                    <div className='mt-6'>
                         <Divider />
 
                         <div className='mt-5'>
