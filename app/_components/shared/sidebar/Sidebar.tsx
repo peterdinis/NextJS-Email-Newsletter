@@ -3,6 +3,7 @@
 import { FC, useState } from 'react';
 import classNames from 'classnames';
 import { IoIosClose } from 'react-icons/io';
+import SidebarItems from './SidebarItems';
 
 const Sidebar: FC = () => {
     const [collapsed, setSidebarCollapsed] = useState(false);
@@ -24,7 +25,9 @@ const Sidebar: FC = () => {
                     >
                         <IoIosClose className='w-10 h-10' />
                     </button>
-                    Sidebar
+                    <div className='mt-6'>
+                        <SidebarItems />
+                    </div>
                 </div>
             </div>
         </div>

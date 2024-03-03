@@ -12,10 +12,8 @@ import {
     Link,
     Button,
 } from '@nextui-org/react';
-
 const Navigation: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const menuItems = ['Profile'];
 
     return (
@@ -49,7 +47,6 @@ const Navigation: FC = () => {
                     </Link>
                 </NavbarItem>
             </NavbarContent>
-
             <NavbarContent justify='end'>
                 <NavbarItem className='hidden lg:flex'>
                     <Link href='/sign-in'>Login</Link>
