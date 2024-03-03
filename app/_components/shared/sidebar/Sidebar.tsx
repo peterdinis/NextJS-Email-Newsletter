@@ -1,28 +1,26 @@
 'use client';
 
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import classNames from 'classnames';
 import { IoIosClose } from 'react-icons/io';
 import SidebarItems from './SidebarItems';
+import { useSidebarStore } from '@/app/_store/sidebarStore';
 
 const Sidebar: FC = () => {
-    const [collapsed, setSidebarCollapsed] = useState(false);
-
+    const { isOpen, toggleSidebar } = useSidebarStore();
     return (
         <div>
             <div
                 className={classNames({
                     'grid min-h-screen': true,
-                    'grid-cols-sidebar': !collapsed,
-                    'grid-cols-sidebar-collapsed': collapsed,
+                    'grid-cols-sidebar': !isOpen,
+                    'grid-cols-sidebar-collapsed': isOpen,
                     'transition-[grid-template-columns] duration-300 ease-in-out':
                         true,
                 })}
             >
                 <div className='bg-gray-400 text-white'>
-                    <button
-                        onClick={() => setSidebarCollapsed((prev) => !prev)}
-                    >
+                    <button onClick={toggleSidebar}>
                         <IoIosClose className='w-10 h-10' />
                     </button>
                     <div className='mt-6'>

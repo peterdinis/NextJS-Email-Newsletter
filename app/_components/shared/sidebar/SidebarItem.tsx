@@ -1,5 +1,6 @@
-import Link from "next/link";
-import { FC, ReactNode } from "react";
+import Link from 'next/link';
+import { FC, ReactNode } from 'react';
+import { Button, Tooltip } from '@nextui-org/react';
 
 interface ISidebarItemProps {
     text: string;
@@ -8,12 +9,19 @@ interface ISidebarItemProps {
     className?: string;
 }
 
-const SidebarItem: FC<ISidebarItemProps> = ({text, className, linkHref, icon}: ISidebarItemProps) => {
+const SidebarItem: FC<ISidebarItemProps> = ({
+    text,
+    className,
+    linkHref,
+    icon,
+}: ISidebarItemProps) => {
     return (
-        <span className={className}>
-            <Link href={linkHref}>{icon} - {text}</Link>
-        </span>
-    )
-}
+        <Button radius='full' variant='ghost' className={className}>
+            <Link href={linkHref}>
+                {icon} - {text}
+            </Link>
+        </Button>
+    );
+};
 
-export default SidebarItem
+export default SidebarItem;
