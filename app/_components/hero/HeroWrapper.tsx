@@ -9,11 +9,11 @@ const HeroWrapper: FC = () => {
                         <span className='block xl:inline'>
                             <span className='mb-1 block'>Sending Emails</span>
                             <span className='bg-gradient-to-r from-indigo-400 to-pink-600 bg-clip-text text-transparent'>
-                                right and 
+                                right and
                             </span>
                         </span>
                         <div className='mt-2'>
-                            simple 
+                            simple
                             <span className='relative mt-3 whitespace-nowrap text-blue-600'>
                                 <svg
                                     aria-hidden='true'
@@ -28,7 +28,14 @@ const HeroWrapper: FC = () => {
                         </div>
                     </h1>
                     <p className='mx-auto mt-3 max-w-xl text-lg text-gray-500 sm:mt-5 md:mt-5'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia iusto ducimus hic fugit voluptas provident enim ullam veniam. Perferendis cumque officiis voluptates? Optio aliquid provident quo ratione sed ducimus esse incidunt quos odit ad dolore accusamus nisi molestiae, minus facilis quis officiis iste beatae exercitationem facere laboriosam asperiores? Perspiciatis, aspernatur.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Mollitia iusto ducimus hic fugit voluptas
+                        provident enim ullam veniam. Perferendis cumque officiis
+                        voluptates? Optio aliquid provident quo ratione sed
+                        ducimus esse incidunt quos odit ad dolore accusamus nisi
+                        molestiae, minus facilis quis officiis iste beatae
+                        exercitationem facere laboriosam asperiores?
+                        Perspiciatis, aspernatur.
                     </p>
                     <div className='mt-5 sm:mt-8 sm:flex sm:justify-center'>
                         <div className='rounded-md shadow'>

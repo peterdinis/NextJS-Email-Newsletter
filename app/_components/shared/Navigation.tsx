@@ -55,7 +55,12 @@ const Navigation: FC = () => {
                     <Link href='/sign-in'>Login</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Button as={Link} color='warning' href='/sign-up' variant='flat'>
+                    <Button
+                        as={Link}
+                        color='warning'
+                        href='/sign-up'
+                        variant='flat'
+                    >
                         Sign Up
                     </Button>
                 </NavbarItem>
