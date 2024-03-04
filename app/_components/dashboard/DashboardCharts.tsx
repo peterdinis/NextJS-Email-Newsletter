@@ -1,45 +1,44 @@
-import React, { useRef, useEffect } from 'react';
-import * as d3 from 'd3';
+'use client';
 
-interface DashboardChartProps {
-  data: number[];
+import { Card, AreaChart, Title, Text } from '@tremor/react';
+import { FC } from 'react';
+
+const data = [
+  {
+    Month: 'Jan 21',
+    Sales: 2890,
+    Profit: 2400
+  },
+  {
+    Month: 'Feb 21',
+    Sales: 1890,
+    Profit: 1398
+  },
+  {
+    Month: 'Jan 22',
+    Sales: 3890,
+    Profit: 2980
+  }
+];
+
+const DashboardCharts: FC = () => {
+  return (
+    <Card className="mt-8">
+      <Title>Performance</Title>
+      <Text>Comparison between Sales and Profit</Text>
+      <AreaChart
+        className="mt-4 h-80"
+        data={data}
+        categories={['Sales', 'Profit']}
+        index="Month"
+        colors={['indigo', 'fuchsia']}
+        valueFormatter={(number: number) =>
+          `$ ${Intl.NumberFormat('us').format(number).toString()}`
+        }
+        yAxisWidth={60}
+      />
+    </Card>
+  );
 }
 
-const DashboardChart: React.FC<DashboardChartProps> = ({ data }) => {
-  const svgRef = useRef<SVGSVGElement | null>(null);
-
-  useEffect(() => {
-    if (!svgRef.current) return;
-
-    // D3 code for creating a bar chart
-    const svg = d3.select(svgRef.current);
-
-    const width = 400;
-    const height = 200;
-
-    const xScale = d3.scaleBand()
-      .domain(data.map((_, index) => index.toString()))
-      .range([0, width])
-      .padding(0.2);
-
-    const yScale = d3.scaleLinear()
-      .domain([0, d3.max(data) || 0])
-      .range([height, 0]);
-
-    svg.selectAll('rect')
-      .data(data)
-      .enter()
-      .append('rect')
-      .attr('x', (_, index) => xScale(index.toString()) || 0)
-      .attr('y', d => yScale(d))
-      .attr('width', xScale.bandwidth())
-      .attr('height', d => height - yScale(d))
-      .attr('fill', 'blue');
-  }, [data]);
-
-  return (
-    <svg className="mt-15" ref={svgRef} width={400} height={400}></svg>
-  );
-};
-
-export default DashboardChart;
+export default DashboardCharts;

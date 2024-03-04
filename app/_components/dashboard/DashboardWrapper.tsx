@@ -7,7 +7,6 @@ import DashboardCards from './DashboardCards';
 import DashboardCharts from './DashboardCharts';
 
 const DashboardWrapper: FC = () => {
-    const data = [10, 20, 15, 25, 30];
     const { user } = useUser();
     return (
         <AppLayout>
@@ -20,7 +19,7 @@ const DashboardWrapper: FC = () => {
                 </div>
 
                 <div className='mt-6'>
-                    <DashboardCharts data={data} />
+                    <DashboardCharts />
                 </div>
             </div>
         </AppLayout>
