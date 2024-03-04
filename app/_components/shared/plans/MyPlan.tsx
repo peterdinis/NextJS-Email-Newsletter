@@ -12,7 +12,7 @@ const MyPlan: FC = () => {
         <Fragment>
             {isOpen ? (
                 <Tooltip content='My plan'>
-                    <FaMoneyBillWaveAlt className='w-8 h-8' />
+                    <FaMoneyBillWaveAlt className='ml-6 w-5 h-5' />
                 </Tooltip>
             ) : (
                 <>

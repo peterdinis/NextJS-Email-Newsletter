@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import SidebarItem from './SidebarItem';
-import { Fa1 } from 'react-icons/fa6';
 import { CiSettings } from 'react-icons/ci';
 import { MdEmail } from 'react-icons/md';
 import { FaPencilAlt } from 'react-icons/fa';
