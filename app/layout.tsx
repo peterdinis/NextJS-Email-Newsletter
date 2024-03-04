@@ -5,6 +5,7 @@ import NextUIWrapper from './_components/shared/providers/NextUIWrapper';
 import Navigation from './_components/shared/Navigation';
 import ScrollToTopWrapper from './_components/shared/providers/ScrollToTopWrapper';
 import { ClerkProvider } from '@clerk/nextjs';
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
                     <Navigation />
                     <ClerkProvider>{children}</ClerkProvider>
                     <ScrollToTopWrapper />
+                    <Toaster />
                 </NextUIWrapper>
             </body>
         </html>
