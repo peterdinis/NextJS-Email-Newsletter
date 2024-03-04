@@ -1,11 +1,8 @@
+import WriteEmailComponent from "@/app/_components/emails/WriteEmailComponent";
 import { FC } from "react";
 
 const WriteNewEmailPage: FC = () => {
-    return (
-        <>
-            Page
-        </>
-    )
+    return <WriteEmailComponent />
 }
 
 export default WriteNewEmailPage
