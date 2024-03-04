@@ -1,9 +1,7 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 const DashboardCharts: FC = () => {
-    return (
-        <>Charts</>
-    )
-}
+    return <>Charts</>;
+};
 
 export default DashboardCharts;
