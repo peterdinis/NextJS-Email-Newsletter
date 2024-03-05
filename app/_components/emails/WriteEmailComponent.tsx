@@ -12,6 +12,7 @@ const WriteEmailComponent: FC = () => {
             <div onClick={() => setOpen(!open)} className="w-[200px] h-[200px] bg-slate-50 flex flex-col items-center justify-center rounded border cursor-pointer">
                 <span className="text-2xl block">
                     <CiCirclePlus className="w-10 h-10" />
+                    <h4 className="text-3xl font-bold">Write new email</h4>
                 </span>
             </div>
         </div>
