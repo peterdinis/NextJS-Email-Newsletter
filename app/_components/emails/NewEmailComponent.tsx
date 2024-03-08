@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 import { FC } from 'react';
 import Link from 'next/link';
 import { IoMdArrowBack } from 'react-icons/io';
-import EmailEditor from './EmailEditor';
+import EmailEditorWrapper from './EmailEditor';
 
 const NewEmailComponent: FC = () => {
     const searchParams = useSearchParams();
@@ -25,7 +25,7 @@ const NewEmailComponent: FC = () => {
                 </Link>
 
                 <div className="my-6">
-                    <EmailEditor subjectTitle={subjectTitle} />
+                    <EmailEditorWrapper subjectTitle={subjectTitle} />
                 </div>
             </div>
         </div>
