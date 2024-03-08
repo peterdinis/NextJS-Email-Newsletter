@@ -1,8 +1,8 @@
-import NewEmailComponent from "@/app/_components/emails/NewEmailComponent";
-import { NextPage } from "next";
+import NewEmailComponent from '@/app/_components/emails/NewEmailComponent';
+import { NextPage } from 'next';
 
 const NewEmailPage: NextPage = () => {
-    return <NewEmailComponent />
-}
+    return <NewEmailComponent />;
+};
 
 export default NewEmailPage;
