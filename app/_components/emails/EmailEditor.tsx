@@ -1,6 +1,6 @@
 "use client"
 
-import { FC } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 
 const EmailEditor: FC = () => {
     return (
