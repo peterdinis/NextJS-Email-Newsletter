@@ -11,6 +11,7 @@
     },
     "dependencies": {
         "@clerk/nextjs": "^4.29.9",
+        "@prisma/client": "^5.10.2",
         "@nextui-org/react": "^2.2.9",
         "@tremor/react": "^3.14.1",
         "classnames": "^2.5.1",
@@ -29,7 +30,6 @@
         "zustand": "^4.5.2"
     },
     "devDependencies": {
-        "@prisma/client": "^5.10.2",
         "@tailwindcss/typography": "^0.5.10",
         "@types/d3": "^7.4.3",
         "@types/node": "^20",
