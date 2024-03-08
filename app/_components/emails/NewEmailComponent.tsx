@@ -25,7 +25,7 @@ const NewEmailComponent: FC = () => {
                 </Link>
 
                 <div className="my-6">
-                    <EmailEditor />
+                    <EmailEditor subjectTitle={subjectTitle} />
                 </div>
             </div>
         </div>
