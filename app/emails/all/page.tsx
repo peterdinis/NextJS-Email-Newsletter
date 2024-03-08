@@ -1,9 +1,7 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 const AllMyEmails: FC = () => {
-    return (
-        <>Page</>
-    )
-}
+    return <>Page</>;
+};
 
-export default AllMyEmails
+export default AllMyEmails;

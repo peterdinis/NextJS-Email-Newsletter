@@ -1,8 +1,8 @@
-import WriteEmailComponent from "@/app/_components/emails/WriteEmailComponent";
-import { FC } from "react";
+import WriteEmailComponent from '@/app/_components/emails/WriteEmailComponent';
+import { FC } from 'react';
 
 const WriteNewEmailPage: FC = () => {
-    return <WriteEmailComponent />
-}
+    return <WriteEmailComponent />;
+};
 
-export default WriteNewEmailPage
+export default WriteNewEmailPage;
