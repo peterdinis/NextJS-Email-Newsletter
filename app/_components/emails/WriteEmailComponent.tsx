@@ -13,13 +13,15 @@ const WriteEmailComponent: FC = () => {
     const router = useRouter();
 
     const handleCreate = () => {
-        if(emailTitle.length === 0) {
-            toast.error("Enter the email subject to continue");
+        if (emailTitle.length === 0) {
+            toast.error('Enter the email subject to continue');
         } else {
-            const formattedTitle = emailTitle.replace(/\s+/, "-").replace(/&/g, "-");
-            router.push(`/email/new-email?subject=${formattedTitle}`)
+            const formattedTitle = emailTitle
+                .replace(/\s+/, '-')
+                .replace(/&/g, '-');
+            router.push(`/email/new-email?subject=${formattedTitle}`);
         }
-    }
+    };
 
     return (
         <div className='w-full flex p-5 flex-wrap gap-6 relative'>
@@ -58,7 +60,11 @@ const WriteEmailComponent: FC = () => {
                             value={emailTitle}
                             onChange={(e) => setEmailTitle(e.target.value)}
                         />
-                        <Button color='primary' className='rounded text-xl mt-3' onClick={handleCreate}>
+                        <Button
+                            color='primary'
+                            className='rounded text-xl mt-3'
+                            onClick={handleCreate}
+                        >
                             Continue
                         </Button>
                     </div>
