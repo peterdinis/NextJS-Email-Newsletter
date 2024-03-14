@@ -6,6 +6,9 @@ import { useClerk } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
 import { Button } from '@nextui-org/react';
 import EmailEditor, { EditorRef, EmailEditorProps } from 'react-email-editor';
+import { saveEmail } from '@/app/_actions/save-email';
+import {toast} from "react-hot-toast";
+
 interface IEmailEditorProps {
     subjectTitle: string;
 }
@@ -21,12 +24,21 @@ const EmailEditorWrapper: FC<IEmailEditorProps> = ({
 
     const exportHtml = () => {
         const unlayer = emailEditorRef.current?.editor;
-
+    
         unlayer?.exportHtml(async (data) => {
-            const { design, html } = data;
-            setJsonData(design);
+          const { design, html } = data;
+          setJsonData(design);
+          /* await sendEmail({
+            userEmail: ["pdinis1@gmail.com"],
+            subject: subjectTitle,
+            content: html,
+          }).then((res) => {
+            toast.success("Email sent successfully!");
+            history.push("/dashboard/write");
+          }); */
         });
-    };
+      };
+    
 
     const onReady: EmailEditorProps['onReady'] = () => {
         const unlayer: any = emailEditorRef.current?.editor;

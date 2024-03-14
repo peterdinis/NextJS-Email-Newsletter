@@ -19,7 +19,7 @@ const WriteEmailComponent: FC = () => {
             const formattedTitle = emailTitle
                 .replace(/\s+/, '-')
                 .replace(/&/g, '-');
-            router.push(`/email/new-email?subject=${formattedTitle}`);
+            router.push(`/emails/new-email?subject=${formattedTitle}`);
         }
     };
 

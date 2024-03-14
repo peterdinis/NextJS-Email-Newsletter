@@ -16,7 +16,7 @@ const NewEmailComponent: FC = () => {
             <div className='w-full p-5 bg-[#fff] rounded-r-xl'>
                 <Link
                     className='opacity-[.7] w-min flex text-xl items-center'
-                    href='/email/write'
+                    href='/emails/write'
                 >
                     <span>
                         <IoMdArrowBack />
