@@ -28,14 +28,14 @@ const EmailEditorWrapper: FC<IEmailEditorProps> = ({
         unlayer?.exportHtml(async (data) => {
           const { design, html } = data;
           setJsonData(design);
-          await sendEmail({
-            userEmail: ["sponsorship@becodemy.com"],
+          /* await sendEmail({
+            userEmail: ["pdinis1@gmail.com"],
             subject: subjectTitle,
             content: html,
           }).then((res) => {
             toast.success("Email sent successfully!");
             history.push("/dashboard/write");
-          });
+          }); */
         });
       };
     
