@@ -8,7 +8,7 @@ export const getEmails = async ({
     try {
       const emails = await prisma.email.findFirst({ 
         where: {
-            newLetterOwnerId: newsLetterOwnerId
+          newLetterOwnerId: newsLetterOwnerId
         }
        });
       return emails;

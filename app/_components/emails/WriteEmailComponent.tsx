@@ -1,5 +1,8 @@
 'use client';
 
+import { deleteEmail } from '@/app/_actions/delete-email';
+import { getEmails } from '@/app/_actions/get-emails';
+import { useClerk } from '@clerk/nextjs';
 import { Button } from '@nextui-org/react';
 import { useRouter } from 'next/navigation';
 import { FC, useState } from 'react';
@@ -9,7 +12,9 @@ import { IoMdClose } from 'react-icons/io';
 
 const WriteEmailComponent: FC = () => {
     const [emailTitle, setEmailTitle] = useState('');
+    const [emails, setEmails] = useState<any>([]);
     const [open, setOpen] = useState(false);
+    const { user } = useClerk();
     const router = useRouter();
 
     const handleCreate = () => {
@@ -23,6 +28,21 @@ const WriteEmailComponent: FC = () => {
         }
     };
 
+    const findEmails = async () => {
+        await getEmails({ newsLetterOwnerId: user?.id! })
+            .then((res) => {
+                setEmails(res);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+
+    const deleteHanlder = async (id: string) => {
+        await deleteEmail({ emailId: id }).then((res) => {
+            findEmails();
+        });
+    };
     return (
         <div className='w-full flex p-5 flex-wrap gap-6 relative'>
             <div
