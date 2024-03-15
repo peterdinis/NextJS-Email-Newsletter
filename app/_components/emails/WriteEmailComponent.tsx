@@ -5,7 +5,7 @@ import { getEmails } from '@/app/_actions/get-emails';
 import { useClerk } from '@clerk/nextjs';
 import { Button } from '@nextui-org/react';
 import { useRouter } from 'next/navigation';
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { CiCirclePlus } from 'react-icons/ci';
 import { IoMdClose } from 'react-icons/io';
@@ -37,6 +37,10 @@ const WriteEmailComponent: FC = () => {
                 console.log(error);
             });
     };
+
+    useEffect(() => {
+        findEmails();
+    }, [user]);
 
     const deleteHanlder = async (id: string) => {
         await deleteEmail({ emailId: id }).then((res) => {
