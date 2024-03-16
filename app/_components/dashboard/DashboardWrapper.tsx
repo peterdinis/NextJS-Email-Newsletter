@@ -14,15 +14,59 @@ const DashboardWrapper: FC = () => {
                     Hi {user?.fullName} and welcome 👋
                 </h1>
 
-                <Grid container spacing={3}>
-                <Grid xs={12} sm={6} md={3}>
-                    <DashboardWidgetSummary
-                        title="Weekly Sales"
-                        total={714000}
-                        color="success"
-                        icon={<img alt="icon" src="/assets/icons/glass/ic_glass_bag.png" />}
-                    />
-                </Grid>
+                <Grid container spacing={3} mt={5}>
+                    <Grid xs={12} sm={6} md={3}>
+                        <DashboardWidgetSummary
+                            title='Weekly Sales'
+                            total={714000}
+                            color='success'
+                            icon={
+                                <img
+                                    alt='icon'
+                                    src='/assets/icons/glass/ic_glass_bag.png'
+                                />
+                            }
+                        />
+                    </Grid>
+                    <Grid xs={12} sm={6} md={3}>
+                        <DashboardWidgetSummary
+                            title='Weekly Sales'
+                            total={714000}
+                            color='success'
+                            icon={
+                                <img
+                                    alt='icon'
+                                    src='/assets/icons/glass/ic_glass_bag.png'
+                                />
+                            }
+                        />
+                    </Grid>
+                    <Grid xs={12} sm={6} md={3}>
+                        <DashboardWidgetSummary
+                            title='Weekly Sales'
+                            total={714000}
+                            color='success'
+                            icon={
+                                <img
+                                    alt='icon'
+                                    src='/assets/icons/glass/ic_glass_bag.png'
+                                />
+                            }
+                        />
+                    </Grid>
+                    <Grid xs={12} sm={6} md={3}>
+                        <DashboardWidgetSummary
+                            title='Weekly Sales'
+                            total={714000}
+                            color='success'
+                            icon={
+                                <img
+                                    alt='icon'
+                                    src='/assets/icons/glass/ic_glass_bag.png'
+                                />
+                            }
+                        />
+                    </Grid>
                 </Grid>
             </div>
         </AppLayout>
