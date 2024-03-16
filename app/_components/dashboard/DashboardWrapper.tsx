@@ -68,6 +68,8 @@ const DashboardWrapper: FC = () => {
                         />
                     </Grid>
                 </Grid>
+
+                {/* Users graph */}
             </div>
         </AppLayout>
     );
